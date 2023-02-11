@@ -21,8 +21,9 @@ urlpatterns = [
 
 
     path('', views.saludo, name='cesar'),
-    path('playstation-1/', views.ps1, name='ps1'),
+    path('', views.ps1, name='ps1'),
     path('playstation-2/', views.ps2, name='ps2'),
     path('Login/', views.loginsesiondef, name='Login'),
     path('admin/', admin.site.urls),
+    path()
 ]

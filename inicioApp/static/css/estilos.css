@@ -1,0 +1,72 @@
+body {
+  font-family: Zrnic;
+  color: #333;
+  margin: 0;
+  padding-top: 4.6rem;
+}
+.cabecera {
+  background: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.logo {
+  width: 7%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.logo :hover {
+  background: white;
+  transition: 1s;
+}
+
+.navegacion1 ul {
+  background-color: rgb(197, 196, 196);
+  margin: 0;
+  padding: 0;
+}
+.navegacion1 a {
+  color: black;
+  text-decoration: none;
+}
+.navegacion1 ul li {
+  display: inline-block;
+}
+.navegacion1 ul li a {
+  display: block;
+  padding: 0.5rem 5.2rem;
+  transition: all 0.4s linear;
+  border-radius: 8px;
+}
+.navegacion1 ul li a:hover {
+  background: #26a6f0;
+  color: rgb(255, 255, 255);
+}
+p {
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.ps {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+h1 {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.pie {
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}

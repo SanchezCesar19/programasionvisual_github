@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--
+    HEAD= INFORMACION DE LA PAGINA.
+    -METADATA:
+    *DESCRIPCION DE LA PAGINA.
+    *PALABRAS CLAVES.
+    *LINKS CSS.
+    *ICONO DE LA PAGINA.
+    *TITULO DE LA PAGINA.-->
+  <head>
+      {% load static %}
+    <meta name="description" content="" />
+    <meta
+      name="Keywords"
+      content="Playstation, hitoria de plastation
+    blog de playstation, playstation 1,playstation 2,playstation 3,
+    playstation 4,playstation 5"
+    />
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+          crossorigin="anonymous"
+        />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>Historia de Playstation</title>
+    <link rel="stylesheet" href='{% static "css/estilos.css" %}'>
+  </head>
+
+  <!--BODY = CUERPO DE LA PAGINA-->
+  <body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href='{% url "cesar" %}'>SONY PLAYSTATION</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              NAVEGACION
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href='{% url "cesar" %}'
+                  >SONY</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='{% url "ps1" %}'>PS1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='{% url "ps2" %}'>PS2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href='{% url "Login" %}'>PS3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="playstation-4.html">PS4</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                BUSCAR
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--
+    -ETIQUETAS DE SECCION:
+    *HEADER = INFORMACION INTRODUCTORA.
+    -->
+    <header class="cabecera">
+      <div class="logo">
+        <a href='{% url "cesar" %}' class="logo"
+          ><img
+            href="inicio.html"
+            src='{% static "img/2.png" %}'
+            width="70"
+            height="70"
+            alt="LOGO PS"
+        /></a>
+      </div>
+    </header>
+    <header class="cabecera1">
+      <div>
+        <nav class="navegacion1">
+          <ul>
+            <li><a href='{% url "ps1" %}'>Playstation 1</a></li>
+            <li><a href='{% url "ps2" %}'>Playstation 2</a></li>
+            <li><a href="playstation-3.html">Playstation 3</a></li>
+            <li><a href="playstation-4.html">Playstation 4</a></li>
+            <li><a href="playstation-5.html">Playstation 5</a></li>
+            <li><a href="#">Realidad V.</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+    -ETIQUETAS DE SECCION:
+    *NAV = ENLACES DE NAVEGACION.
+    -->
+    <nav></nav>
+
+    <!--
+    ETIQUETAS DE SECCION:
+    *SECTION = SECCION GENERAL DEL DOCUMENTO, BLOQUES DE CONTENIDO.
+    -->
+    <section>
+        <br>
+      <h1 class="titulo">Historia de Playstation:</h1>
+        <br>
+      <p>
+        PlayStation (プレイステーション Pureisutēshon?, comúnmente abreviado
+        como PS) es el nombre de una serie de consolas de videojuegos creadas y
+        desarrolladas por Sony Interactive Entertainment. Han estado presentes
+        en la quinta, sexta, séptima, octava y novena generación de
+        videoconsolas, la compañía promotora está actualmente en el mercado con
+        su PlayStation 5.
+      </p>
+        <br>
+      <div class="ps">
+        <img src='{% static "img/ps.jpg" %}' width="300" height="200" alt="pss" />
+      </div>
+        <br>
+      <p>
+        La marca se introdujo por primera vez el 3 de diciembre de 1994 en Japón
+        y ha desarrollado y publicado cinco videoconsolas de sobremesa, que
+        incluyen un centro de medios de comunicación y un servicio en línea,
+        posteriormente se introdujeron revistas y computadoras.
+      </p>
+        <br>
+      <div class="ps">
+        <img src='{% static "img/Sony-PlayStation-958x575.jpg" %}' width="300" height="200" alt="sony" />
+      </div>
+        <br>
+    </section>
+
+    <!--
+    ETIQUETAS DE SECCION:
+    *ASIDE = CONTENIDO RELACIONADO CON EL CONTENIDO.
+    -->
+    <aside></aside>
+
+    <!--
+    ETIQUETAS DE SECCION:
+    *FOOTER = INFORMACION ADICIONAL SOBRE EL DOCUMENTO.
+    -->
+    <footer class="pie">
+      Diseñado y creado por CESAR SANCHEZ - TODOS LOS DERECHOS RESERVADOS
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
